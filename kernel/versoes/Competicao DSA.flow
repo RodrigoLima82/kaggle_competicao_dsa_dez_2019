@@ -1,0 +1,93 @@
+{
+  "version": "1.0.0",
+  "cells": [
+    {
+      "type": "cs",
+      "input": ""
+    },
+    {
+      "type": "cs",
+      "input": "importFiles"
+    },
+    {
+      "type": "cs",
+      "input": "importFiles [ \"/Users/rodrigolima82/Google_Drive/DATA SCIENCE/kaggle/kaggle_competicao_dsa_dez_2019/dataset/dataset_treino.csv\" ]"
+    },
+    {
+      "type": "cs",
+      "input": "setupParse source_frames: [ \"nfs://Users/rodrigolima82/Google_Drive/DATA SCIENCE/kaggle/kaggle_competicao_dsa_dez_2019/dataset/dataset_treino.csv\" ]"
+    },
+    {
+      "type": "cs",
+      "input": "importFiles [ \"/Users/rodrigolima82/Google_Drive/DATA SCIENCE/kaggle/kaggle_competicao_dsa_dez_2019/dataset/dataset_teste.csv\" ]"
+    },
+    {
+      "type": "cs",
+      "input": "setupParse source_frames: [ \"nfs://Users/rodrigolima82/Google_Drive/DATA SCIENCE/kaggle/kaggle_competicao_dsa_dez_2019/dataset/dataset_teste.csv\" ]"
+    },
+    {
+      "type": "cs",
+      "input": "parseFiles\n  source_frames: [\"nfs://Users/rodrigolima82/Google_Drive/DATA SCIENCE/kaggle/kaggle_competicao_dsa_dez_2019/dataset/dataset_treino.csv\"]\n  destination_frame: \"train\"\n  parse_type: \"CSV\"\n  separator: 44\n  number_columns: 133\n  single_quotes: false\n  column_names: [\"ID\",\"target\",\"v1\",\"v2\",\"v3\",\"v4\",\"v5\",\"v6\",\"v7\",\"v8\",\"v9\",\"v10\",\"v11\",\"v12\",\"v13\",\"v14\",\"v15\",\"v16\",\"v17\",\"v18\",\"v19\",\"v20\",\"v21\",\"v22\",\"v23\",\"v24\",\"v25\",\"v26\",\"v27\",\"v28\",\"v29\",\"v30\",\"v31\",\"v32\",\"v33\",\"v34\",\"v35\",\"v36\",\"v37\",\"v38\",\"v39\",\"v40\",\"v41\",\"v42\",\"v43\",\"v44\",\"v45\",\"v46\",\"v47\",\"v48\",\"v49\",\"v50\",\"v51\",\"v52\",\"v53\",\"v54\",\"v55\",\"v56\",\"v57\",\"v58\",\"v59\",\"v60\",\"v61\",\"v62\",\"v63\",\"v64\",\"v65\",\"v66\",\"v67\",\"v68\",\"v69\",\"v70\",\"v71\",\"v72\",\"v73\",\"v74\",\"v75\",\"v76\",\"v77\",\"v78\",\"v79\",\"v80\",\"v81\",\"v82\",\"v83\",\"v84\",\"v85\",\"v86\",\"v87\",\"v88\",\"v89\",\"v90\",\"v91\",\"v92\",\"v93\",\"v94\",\"v95\",\"v96\",\"v97\",\"v98\",\"v99\",\"v100\",\"v101\",\"v102\",\"v103\",\"v104\",\"v105\",\"v106\",\"v107\",\"v108\",\"v109\",\"v110\",\"v111\",\"v112\",\"v113\",\"v114\",\"v115\",\"v116\",\"v117\",\"v118\",\"v119\",\"v120\",\"v121\",\"v122\",\"v123\",\"v124\",\"v125\",\"v126\",\"v127\",\"v128\",\"v129\",\"v130\",\"v131\"]\n  column_types: [\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Enum\",\"Numeric\",\"Enum\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Enum\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\"]\n  delete_on_done: true\n  check_header: 1\n  chunk_size: 3621888"
+    },
+    {
+      "type": "cs",
+      "input": "parseFiles\n  source_frames: [\"nfs://Users/rodrigolima82/Google_Drive/DATA SCIENCE/kaggle/kaggle_competicao_dsa_dez_2019/dataset/dataset_teste.csv\"]\n  destination_frame: \"test\"\n  parse_type: \"CSV\"\n  separator: 44\n  number_columns: 132\n  single_quotes: false\n  column_names: [\"ID\",\"v1\",\"v2\",\"v3\",\"v4\",\"v5\",\"v6\",\"v7\",\"v8\",\"v9\",\"v10\",\"v11\",\"v12\",\"v13\",\"v14\",\"v15\",\"v16\",\"v17\",\"v18\",\"v19\",\"v20\",\"v21\",\"v22\",\"v23\",\"v24\",\"v25\",\"v26\",\"v27\",\"v28\",\"v29\",\"v30\",\"v31\",\"v32\",\"v33\",\"v34\",\"v35\",\"v36\",\"v37\",\"v38\",\"v39\",\"v40\",\"v41\",\"v42\",\"v43\",\"v44\",\"v45\",\"v46\",\"v47\",\"v48\",\"v49\",\"v50\",\"v51\",\"v52\",\"v53\",\"v54\",\"v55\",\"v56\",\"v57\",\"v58\",\"v59\",\"v60\",\"v61\",\"v62\",\"v63\",\"v64\",\"v65\",\"v66\",\"v67\",\"v68\",\"v69\",\"v70\",\"v71\",\"v72\",\"v73\",\"v74\",\"v75\",\"v76\",\"v77\",\"v78\",\"v79\",\"v80\",\"v81\",\"v82\",\"v83\",\"v84\",\"v85\",\"v86\",\"v87\",\"v88\",\"v89\",\"v90\",\"v91\",\"v92\",\"v93\",\"v94\",\"v95\",\"v96\",\"v97\",\"v98\",\"v99\",\"v100\",\"v101\",\"v102\",\"v103\",\"v104\",\"v105\",\"v106\",\"v107\",\"v108\",\"v109\",\"v110\",\"v111\",\"v112\",\"v113\",\"v114\",\"v115\",\"v116\",\"v117\",\"v118\",\"v119\",\"v120\",\"v121\",\"v122\",\"v123\",\"v124\",\"v125\",\"v126\",\"v127\",\"v128\",\"v129\",\"v130\",\"v131\"]\n  column_types: [\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Enum\",\"Numeric\",\"Enum\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Enum\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\"]\n  delete_on_done: true\n  check_header: 1\n  chunk_size: 3616256"
+    },
+    {
+      "type": "cs",
+      "input": "getFrameSummary \"train\""
+    },
+    {
+      "type": "cs",
+      "input": "getFrameSummary \"test\""
+    },
+    {
+      "type": "cs",
+      "input": "assist splitFrame, \"train\""
+    },
+    {
+      "type": "cs",
+      "input": "splitFrame \"train\", [0.75], [\"frame_0.750\",\"frame_0.250\"], 590757"
+    },
+    {
+      "type": "cs",
+      "input": "assist buildModel, null, training_frame: \"train\""
+    },
+    {
+      "type": "cs",
+      "input": "buildModel 'xgboost', {\"model_id\":\"xgboost-34bb082c-f7ce-44d7-aa50-ad857902eadb\",\"training_frame\":\"frame_0.750\",\"validation_frame\":\"frame_0.250\",\"nfolds\":\"5\",\"response_column\":\"target\",\"ignored_columns\":[\"ID\"],\"ignore_const_cols\":true,\"seed\":-1,\"ntrees\":50,\"max_depth\":6,\"min_rows\":1,\"min_child_weight\":1,\"learn_rate\":0.3,\"eta\":0.3,\"sample_rate\":1,\"subsample\":1,\"col_sample_rate\":1,\"colsample_bylevel\":1,\"score_each_iteration\":false,\"fold_assignment\":\"AUTO\",\"stopping_rounds\":\"100\",\"stopping_metric\":\"logloss\",\"stopping_tolerance\":0.001,\"max_runtime_secs\":0,\"distribution\":\"AUTO\",\"categorical_encoding\":\"AUTO\",\"export_checkpoints_dir\":\"\",\"col_sample_rate_per_tree\":1,\"colsample_bytree\":1,\"monotone_constraints\":[],\"score_tree_interval\":0,\"min_split_improvement\":0,\"gamma\":0,\"max_leaves\":0,\"tree_method\":\"auto\",\"grow_policy\":\"depthwise\",\"dmatrix_type\":\"auto\",\"keep_cross_validation_models\":true,\"keep_cross_validation_predictions\":false,\"keep_cross_validation_fold_assignment\":false,\"quiet_mode\":true,\"max_abs_leafnode_pred\":0,\"max_delta_step\":0,\"nthread\":-1,\"save_matrix_directory\":\"\",\"max_bins\":256,\"min_sum_hessian_in_leaf\":100,\"min_data_in_leaf\":0,\"sample_type\":\"uniform\",\"normalize_type\":\"tree\",\"rate_drop\":0,\"one_drop\":false,\"skip_drop\":0,\"booster\":\"gbtree\",\"reg_lambda\":1,\"reg_alpha\":0,\"backend\":\"auto\",\"gpu_id\":0}"
+    },
+    {
+      "type": "cs",
+      "input": "getModel \"xgboost-34bb082c-f7ce-44d7-aa50-ad857902eadb\""
+    },
+    {
+      "type": "cs",
+      "input": "getFrameSummary \"test\""
+    },
+    {
+      "type": "cs",
+      "input": "predict"
+    },
+    {
+      "type": "cs",
+      "input": "predict model: \"xgboost-34bb082c-f7ce-44d7-aa50-ad857902eadb\", frame: \"test\", predictions_frame: \"prediction-23f25542-678f-486c-ace4-6efe0dd73a4a\""
+    },
+    {
+      "type": "cs",
+      "input": "getFrameSummary \"prediction-23f25542-678f-486c-ace4-6efe0dd73a4a\""
+    },
+    {
+      "type": "cs",
+      "input": "changeColumnType frame: \"prediction-23f25542-678f-486c-ace4-6efe0dd73a4a\", column: \"predict\", type: 'int'"
+    },
+    {
+      "type": "cs",
+      "input": "getColumnSummary \"prediction-23f25542-678f-486c-ace4-6efe0dd73a4a\", \"p1\""
+    },
+    {
+      "type": "cs",
+      "input": "getFrameData \"prediction-23f25542-678f-486c-ace4-6efe0dd73a4a\""
+    }
+  ]
+}
